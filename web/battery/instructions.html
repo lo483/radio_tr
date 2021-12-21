@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<style>
+	img {
+		width: 100%; 
+		height: auto;
+	}
+	</style>
+
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  
+		<title>Battery Settings</title>
+  
+</head>
+
+<body>
+
+	<script>
+		function reload() {
+			var eLanguage = document.getElementById("Language");
+			var language = eLanguage.options[eLanguage.selectedIndex].value;
+			
+			var eManufacturer = document.getElementById("Manufacturer");
+			var manufacturer = eManufacturer.options[eManufacturer.selectedIndex].value;
+			
+			var oldLink = window.location.href;
+			var newLink = oldLink.substring(0, oldLink.indexOf("?"));
+			newLink += "?" + "language=" + language;
+			newLink += "&" + "manufacturer=" + manufacturer;
+			
+			
+			window.location.href=newLink;
+		}
+	</script>
+
+
+
+  <header>
+	<div style="background-color:#E30A17; max-height:150px;">
+		<img src="logo.png" alt="logo" style="display:block; margin-left:auto; margin-right:auto; max-height:150px; width:auto;">
+	</div>
+    <h2>Battery Settings</h2>
+  </header>
+  
+  <main>
+    <article>
+
+		
+		<img src="google/en/1.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/2.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/3.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/4.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/5.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/6.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/7.jpg">
+<hr style="margin-top:8%; margin-bottom:8%;">
+<img src="google/en/8.jpg">
+<br/>		
+    </article>
+  </main>
+
+  <footer>
+	<a href="imprintb3e9.html?language=EN" style="margin-top:20%;">
+		Imprint	</a>
+	<p>© 2019 by Radyo Türk</p>
+  </footer>
+</body>
+
+</html>
